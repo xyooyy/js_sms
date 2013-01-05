@@ -22,28 +22,115 @@
     <script lang='javascript' src='js/base_storage.js'></script>
     <script lang='javascript' src='js/sort.js'></script>
     <script lang='javascript' src='js/test_data.js'></script>
-    <script lang='javascript' src='js/pages/pages.js'></script>
   </head>
   <body>
     <div data-role="page" id="activity">
-        <div data-role='header' id="head">
+        <div data-role='header' id="activity_head">
             <h1>活动</h1>
-            <a data-theme="a" class="ui-btn-right" href="#create_activity">创建活动</a>
+            <a data-theme="a" class="ui-btn-right" onclick="go_to_create_activity_page()">创建活动</a>
         </div>
         <div id="content">
-            <ul data-role="listview">
-                <li><a onclick="">Acura</a></li>
-                <li><a href="#">Audi</a></li>
-                <li><a href="#">BMW</a></li>
+            <ul data-role="listview" id="activity_list">
+                <li><a onclick="go_to_apply_page()">活动一</a></li>
+                <li><a onclick="go_to_apply_page()">活动二</a></li>
+                <li><a onclick="go_to_apply_page()">活动三</a></li>
             </ul>
         </div>
-        <div data-role="page" id="create_activity">
-            <div data-role="header" id="head">
-                <h1>创建活动</h1>
-                <a data-theme="a" href="#activity">返回</a>
+    </div>
+
+    <div data-role="page" id="create_activity">
+        <div data-role="header" id="create_activity_head">
+            <h1>创建活动</h1>
+            <a data-role="a" onclick="go_to_activity_page()">返回</a>
+        </div>
+        <div id="create_activity_content">
+            <label for="basic">活动名称:</label>
+            <input type="text" name="name" id="basic" value=""  />
+
+            <a data-role="button" onclick="go_to_apply_page()">创建</a>
+        </div>
+    </div>
+
+    <div data-role="page" id="apply">
+        <div data-role="header" id="apply_head">
+            <h1>报名</h1>
+            <a data-role="a" onclick="go_to_activity_page()">返回</a>
+            <a data-role="a" class="ui-btn-right" onclick="click_apply_start()" id="apply_start"><span id="start_apply">开始</span></a>
+            <a data-role="a" class="ui-btn-right" onclick="go_to_bid_page()" id="apply_end"><span id="end_apply">结束</span></a>
+
+        </div>
+        <div id="apply_content">
+            <ul data-role="listview" id="apply_list">
+            </ul>
+        </div>
+        <div data-role="footer" data-id="foo1" data-position="fixed" id="apply_footer">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#">报名</a></li>
+                    <li><a href="#">竞价</a></li>
+                </ul>
             </div>
         </div>
     </div>
-    <
+    <div data-role="page" id="bid">
+        <div data-role="header" id="bid_head">
+            <h1>竞价</h1>
+            <a data-role="a" onclick="go_to_activity_page()">返回</a>
+            <a data-role="a"  class="ui-btn-right"  onclick="go_to_bid_start_page()">
+                <span id="start_bid">开始</span>
+            </a>
+        </div>
+        <div id="bid_apply">
+            <ul data-role="listview">
+                <li><a onclick="go_to_bid_start_page()">竞价一</a> </li>
+            </ul>
+        </div>
+        <div data-role="footer" data-id="fool" data-position="fixed" id="bid_footer">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#">报名</a></li>
+                    <li><a href="#">竞价</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="bid_start">
+        <div data-role="header" id="bid_start_head">
+            <h1>竞价</h1>
+            <a data-role="a" onclick="go_to_bid_page()">返回</a>
+            <a data-role="a" class="ui-btn-right" onclick="go_to_bid_end_page()"><span>结束</span></a>
+        </div>
+        <div id="bid_start_content">
+            <ul data-role="listview" id="bid_start_ul">
+                <li><h4>张三</h4><p>13912345678</p></li>
+                <li><h4>李二</h4><p>13112345678</p></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="page" id="bid_end">
+        <div data-role="header" id="bid_end_head">
+            <h1>竞价</h1>
+            <a data-role="a" onclick="go_to_bid_start_page()">返回</a>
+            <a data-role="a" class="ui-btn-right" onclick="go_to_bid_count_page()"><span>统计</span></a>
+        </div>
+        <div id="bid_end_content">
+            <ul data-role="listview" id="bid_end_ul">
+                <li><h4>张三</h4><p>13912345678</p><h4 class="ui-li-aside">¥5</h4></li>
+                <li><h4>李二</h4><p>13112345678</p><h4 class="ui-li-aside">¥9</h4></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="page" id="bid_count">
+        <div data-role="header" id="bid_count_head">
+            <h1>竞价</h1>
+            <a data-role="a" onclick="go_to_bid_end_page()">返回</a>
+            <a data-role="a" class="ui-btn-right" onclick="go_to_bid_page()"><span>列表</span></a>
+        </div>
+        <div id="bid_count_content">
+            <ul data-role="listview" id="bid_count_ul">
+                <li><h4>¥5</h4><h4 class="ui-li-aside">10人</h4></li>
+            </ul>
+        </div>
+    </div>
   </body>
 </html>

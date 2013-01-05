@@ -1,44 +1,36 @@
-var success_callback = function()
+function go_to_activity_page()
 {
-   alert("回复发送成功！")
-}
-var error_callback = function()
-{
-    alert("回复发送失败！");
+    window.location.href = "#activity";
 }
 
-function process_send_sms(callBack)
+function go_to_create_activity_page()
 {
-    var _native_accessor = native_accessor;
-    _native_accessor.send_sms(success_callback,error_callback,callBack);
-    window.localStorage.callBack += callBack + '*';
-    write_in_table();
+    window.location.href = "#create_activity";
 }
-function save_receive_message_result_to_list(message)
+
+function go_to_apply_page()
 {
-    window.localStorage.messasgeList += message + '*';
+    $("#apply_start").show();
+    $("#apply_end").hide();
+    window.location.href = "#apply";
 }
-function write_in_table ()
+
+function go_to_bid_page()
 {
-    var massages = new Array();
-    var callBacks = new Array();
-    var str = '<li data-theme="b" class="ui-li ui-li-static ui-btn-up-b">报名信息</li>';
-    massages = window.localStorage.messasgeList.split('*');
-    callBacks = window.localStorage.callBack.split('*');
-    for(i=0;i < massages.length-1;i++)
-    {
-        str += "<li class='ui-li ui-li-static ui-btn-up-c'><h4 class='ui-li-heading'>" +massages[i]+"</h4><p class='ui-li-desc' style='color:#1e90ff;'>回复内容:" +callBacks[i]+ "</p></li>";
-    }
-    $("#saveSms_callBack").html(str);
+    window.location.href = "#bid";
 }
-$(document).ready(function(){
-     if(!window.localStorage.callBack)
-     {
-         window.localStorage.callBack = "";
-     }
-     if(!window.localStorage.messasgeList)
-     {
-         window.localStorage.messasgeList = "";
-     }
-     write_in_table();
-});
+
+function go_to_bid_start_page()
+{
+    window.location.href = "#bid_start";
+}
+
+function go_to_bid_end_page()
+{
+    window.location.href = "#bid_end";
+}
+
+function go_to_bid_count_page()
+{
+    window.location.href = "#bid_count";
+}
