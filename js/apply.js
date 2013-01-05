@@ -11,9 +11,10 @@ function add_partner_from (messages_json)
     return;
 }
 
-function end_apply()
+function finish_apply()
 {
     end_apply = true;
+    display_price_list();
 }
 
 
@@ -38,3 +39,19 @@ function have_apply (phone_number)
 }
 
 
+function list_price()
+{
+    var list = '';
+    list+= '<h1 class="ui-title"></h1><a data-theme="a" class="ui-btn-left ui-btn ui-shadow ui-btn-corner-all ui-btn-up-a"><span>开始竞价</span></a><a data-theme="a">结束竞价</a>';
+    return list;
+}
+function display_price_list()
+{
+    //alert(list_price());
+    var a = "<div data-role='header' ><h1></h1><a data-theme='a'>开始竞价</a><a data-theme='a'>结束竞价</a></div>";
+    $("#content").html(a);
+    try{
+        $("#content").trigger("create");
+    }catch(e){}
+
+}

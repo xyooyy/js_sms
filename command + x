@@ -1,0 +1,14 @@
+<div class='ui-body' data-role='content'>
+      <a data-inline='true' data-position-to='window' data-rel='popup' data-role='button' data-transition='pop' href='#popupDialog' id='dialog' style='visibility:hidden;'>Dialog</a>
+      <div data-role='popup' data-theme='none' id='popupNested'>
+        <div class='ui-corner-all' data-overlay-theme='a' data-role='popup' data-theme='c' id='popupDialog' style='max-width:400px;'>
+          <div class='ui-corner-top' data-role='header' data-theme='a'>
+            <h1>Dialog</h1>
+          </div>
+          <div class='ui-corner-bottom ui-content' data-role='content' data-theme='d'>
+            <p id='message'></p>
+            <a data-inline='true' data-rel='back' data-role='button' data-theme='c' data-transition='flow' href='#' onclick="process_send_sms('Y')">Y</a>
+            <a data-inline='true' data-rel='back' data-role='button' data-theme='c' href='#' onclick="process_send_sms('N')">N</a>
+          </div>
+        </div>
+      </div>

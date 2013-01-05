@@ -78,7 +78,6 @@ function handle_current_bid_result(fn)
     var result =  bid_diff_sort(diff);
 
     $.each(result, function (index, contact){
-      alert(contact) ;
       if (fn != null) fn(diff[contact].phone, diff[contact].price);
 
     });
