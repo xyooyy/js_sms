@@ -15,13 +15,14 @@
     <script lang='javascript' src='lib/js/mock/cordova_mock.js'></script>
     <script lang='javascript' src='lib/js/jquery/jquery-1.8.2.min.js'></script>
     <script lang='javascript' src='lib/js/jquery/jquery.mobile-1.2.0.min.js'></script>
-    <script src='js/pages.js' type='text/javascript'></script>
+    <script src='js/jump_pages.js' type='text/javascript'></script>
     <script lang='javascript' src='js/application.js'></script>
     <script lang='javascript' src='js/apply.js'></script>
     <script lang='javascript' src='js/offer_price.js'></script>
     <script lang='javascript' src='js/base_storage.js'></script>
     <script lang='javascript' src='js/sort.js'></script>
     <script lang='javascript' src='js/test_data.js'></script>
+    <script lang="javascript" src='js/page_content.js'></script>
   </head>
   <body>
     <div data-role="page" id="activity">
@@ -44,8 +45,8 @@
             <a data-role="a" onclick="go_to_activity_page()">返回</a>
         </div>
         <div id="create_activity_content">
-            <label for="basic">活动名称:</label>
-            <input type="text" name="name" id="basic" value=""  />
+            <label for="activity_name">活动名称:</label>
+            <input type="text" name="name" id="activity_name" value=""  />
 
             <a data-role="button" onclick="go_to_apply_page()">创建</a>
         </div>

@@ -44,3 +44,4 @@ function notify_message_received(message_json){
     native_accessor.receive_message(message_json.messages[0].message);
     phone_number=message_json.messages[0].phone;
 }
+

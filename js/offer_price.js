@@ -79,8 +79,9 @@ function handle_current_bid_result(fn)
 
     $.each(result, function (index, contact){
       if (fn != null) fn(diff[contact].phone, diff[contact].price);
-
     });
+
     return ;
 }
+
 
