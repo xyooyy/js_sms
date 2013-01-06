@@ -22,7 +22,16 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="121" selection-start="2231" selection-end="2231" vertical-scroll-proportion="-15.625">
+            <state line="84" column="49" selection-start="4032" selection-end="4032" vertical-scroll-proportion="-20.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jump_pages.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/jump_pages.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="119" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -31,7 +40,7 @@
       <file leaf-file-name="page_content.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/page_content.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="61" selection-start="570" selection-end="570" vertical-scroll-proportion="0.5208333">
+            <state line="10" column="119" selection-start="210" selection-end="210" vertical-scroll-proportion="0.26041666">
               <folding />
             </state>
           </provider>
@@ -63,8 +72,8 @@
         <option value="$PROJECT_DIR$/js/offer_price.js" />
         <option value="$PROJECT_DIR$/js/application.js" />
         <option value="$PROJECT_DIR$/js/apply.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/jump_pages.js" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/page_content.js" />
       </list>
     </option>
@@ -393,13 +402,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="121" selection-start="2231" selection-end="2231" vertical-scroll-proportion="-15.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/application.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="47" column="0" selection-start="1296" selection-end="1296" vertical-scroll-proportion="0.8934281">
@@ -409,14 +411,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/jump_pages.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="119" selection-start="164" selection-end="164" vertical-scroll-proportion="0.20833333">
+        <state line="8" column="119" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="49" selection-start="4032" selection-end="4032" vertical-scroll-proportion="-20.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/page_content.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="61" selection-start="570" selection-end="570" vertical-scroll-proportion="0.5208333">
+        <state line="10" column="119" selection-start="210" selection-end="210" vertical-scroll-proportion="0.26041666">
           <folding />
         </state>
       </provider>
